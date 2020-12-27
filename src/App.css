@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(224, 142, 74) 0%,
+    rgb(250, 201, 95) 100%
+  );
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 40px;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+  height: 640px;
+  background: #35342e;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.Empty {
+  margin-top: 9rem;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgb(202, 204, 73);
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px 25px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: rgb(202, 204, 73);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-button:active {
+  color: rgb(155, 155, 155);
+}
+
+.clear-button {
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #2eb984;
+}
+
+.clear-button:hover {
+  background-color: #216e51;
+  color: rgb(155, 155, 155);
+  transition: ease 0.3s all;
+}
+
+.todo-input.edit {
+  border: 2px solid rgb(43, 134, 253);
+}
+
+.todo-button.edit {
+  background:  rgb(43, 134, 253);
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px auto;
+  color: #fff;
+  border: 2px solid #b3b09f;
+  padding: 10px 16px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons > div {
+  margin-left: 10px;
+  padding: 2px;
+  margin-bottom: -3px;
+}
+
+.icons > * :hover {
+  color: #817f6f;
+  transition: ease 0.3s all;
+}
+
+.check-icon {
+  color: #fff;
+}
+
+.delete-icon {
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+.scroll-container {
+  overflow: scroll;
+  max-height: 400px;
+}
