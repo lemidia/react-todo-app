@@ -202,4 +202,5 @@ input 필드에서 onKeyUp={handleKeyUp}의 이벤트를 추가하여 키가 눌
 #### 5. 컴포넌트의 네이밍과 그 역할 관점에서 보면 기존의 Todo 컴포넌트와 TodoList 컴포넌트, 이 둘의 네임을 서로 바꾸는 것이 좋다고 생각되어, 이름을 서로 바꾸고 이 들의 컴포넌트를 이용하는 부분의 코드도 같이 수정하였다.
 
 기존 Todo.js의 이름에서 -> TodoList.js 라는 이름으로
-기존 TodoList.js의 이름에서 -> Todo.js 라는 
+
+기존 TodoList.js의 이름에서 -> Todo.js 라는 이름으로
